@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btCoolWeather">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="api" type="X2">
+			<default value="" />
+		</field>
+		<field name="units" type="X2">
+			<default value="" />
+		</field>
+		<field name="id" type="X2">
+			<default value="" />
+		</field>
+		<field name="language" type="X2">
+			<default value="" />
+		</field>
+		<field name="header" type="X2">
+			<default value="" />
+		</field>
+		<field name="feelslike" type="X2">
+			<default value="" />
+		</field>
+		<field name="humidity" type="X2">
+			<default value="" />
+		</field>
+		<field name="wind" type="X2">
+			<default value="" />
+		</field>
+	</table>
+</schema>
