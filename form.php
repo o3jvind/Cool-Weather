@@ -36,7 +36,7 @@ if (!isset($wind)) {
 
 ?>
 
-<span>Sign up at  <a href="https://home.openweathermap.org/users/sign_up" target="_blank">https://home.openweathermap.org/users/sign_up</a> to get a free API key</span>
+<div class="help-block">Sign up at  <a href="https://home.openweathermap.org/users/sign_up" target="_blank">https://home.openweathermap.org/users/sign_up</a> to get a free API key</div>
 
 
 <div class="form-group">
@@ -45,9 +45,12 @@ if (!isset($wind)) {
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="units"><?=t('Units (metric or imperial)')?></label>
-    <input type="text" class="form-control" name="units" value="<?php echo $units?>">
-</div>
+        <label class="control-label"><?php  echo t('Select units')?></label>
+        <select name="units" class="form-control">
+            <option value="metric" <?php echo($this->controller->displayTag == "metric" ? "selected" : "")?>><?=t('Metric')?></option>
+            <option value="imperial" <?php echo($this->controller->displayTag == "imperial" ? "selected" : "")?>><?=t('Imperial')?></option>
+        </select>
+    </div>
 
 <div class="form-group">
     <label class="control-label" for="id"><?=t('ID (City ID)')?></label>
