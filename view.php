@@ -16,7 +16,7 @@ else {
 	// Display result
 print_r($headers);
 	return;
-	
+
 }
 
 $forecast = json_decode(file_get_contents($api_url));
@@ -36,7 +36,7 @@ $winddirection_current = $forecast->wind->deg;
 		<div class="card p-4" style="margin: 0 auto; max-width:320px;">
 			<h2><?php echo $header ?></h2>
 			<p class="lead"><?php echo ucfirst($description_current); ?></p>
-			<span class="my-3" style="font-size:48px"><?php echo $controller->get_icon($icon); ?></span>
+			<span class="my-3" style="font-size:<?php echo $iconsize ?>px;"> <?php echo $controller->get_icon($icon); ?></span>
 			<h3><?php echo $temperature_current ?>&deg;</h3>
 			<p><?php echo $feelslike . ' ' . $temperature_feels_like_current; ?>&deg;</p>
 			<p><?php echo $humidity . ' ' . $humidity_current; ?>%</p>
