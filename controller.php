@@ -43,8 +43,6 @@ class Controller extends BlockController
     public function save($data)
     {
         parent::save($data);
-        $data['units'] = intval($data['units']);
-        $data['language'] = intval($data['language']);
     }
 
 
