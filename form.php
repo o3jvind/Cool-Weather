@@ -51,8 +51,8 @@ if (!isset($wind)) {
 <div class="form-group">
         <label class="control-label"><?php  echo t('Select units')?></label>
         <select name="units" class="form-control">
-            <option value="metric" <?php echo($this->controller->displayTag == "metric" ? "selected" : "")?>><?=t('Metric')?></option>
-            <option value="imperial" <?php echo($this->controller->displayTag == "imperial" ? "selected" : "")?>><?=t('Imperial')?></option>
+            <option value="metric" <?php echo($units == "metric" ? "selected" : "")?>><?=t('Metric')?></option>
+            <option value="imperial" <?php echo($units == "imperial" ? "selected" : "")?>><?=t('Imperial')?></option>
         </select>
     </div>
 
@@ -64,43 +64,43 @@ if (!isset($wind)) {
 <div class="form-group">
         <label class="control-label"><?php  echo t('Select language')?></label>
         <select name="language" class="form-control">
-            <option value="af" <?php echo($this->controller->displayTag == "af" ? "selected" : "")?>><?=t('Afrikaans')?></option>
-            <option value="al" <?php echo($this->controller->displayTag == "al" ? "selected" : "")?>><?=t('Albanian')?></option>
-            <option value="ar" <?php echo($this->controller->displayTag == "ar" ? "selected" : "")?>><?=t('Arabic')?></option>
-            <option value="az" <?php echo($this->controller->displayTag == "az" ? "selected" : "")?>><?=t('Azerbaijani')?></option>
-            <option value="bg" <?php echo($this->controller->displayTag == "bg" ? "selected" : "")?>><?=t('Bulgarian')?></option>
-            <option value="cz" <?php echo($this->controller->displayTag == "cz" ? "selected" : "")?>><?=t('Czech')?></option>
-            <option value="en" <?php echo($this->controller->displayTag == "en" ? "selected" : "")?>><?=t('English')?></option>
-            <option value="eu" <?php echo($this->controller->displayTag == "eu" ? "selected" : "")?>><?=t('Basque')?></option>
-            <option value="fa" <?php echo($this->controller->displayTag == "fa" ? "selected" : "")?>><?=t('Persian (Farsi)')?></option>
-            <option value="fi" <?php echo($this->controller->displayTag == "fi" ? "selected" : "")?>><?=t('Finnish')?></option>
-            <option value="fr" <?php echo($this->controller->displayTag == "fr" ? "selected" : "")?>><?=t('French')?></option>
-            <option value="he" <?php echo($this->controller->displayTag == "he" ? "selected" : "")?>><?=t('Hebrew')?></option>
-            <option value="hr" <?php echo($this->controller->displayTag == "hr" ? "selected" : "")?>><?=t('Croatian')?></option>
-            <option value="hu" <?php echo($this->controller->displayTag == "hu" ? "selected" : "")?>><?=t('Hungarian')?></option>
-            <option value="id" <?php echo($this->controller->displayTag == "id" ? "selected" : "")?>><?=t('Indonesian')?></option>
-            <option value="it" <?php echo($this->controller->displayTag == "it" ? "selected" : "")?>><?=t('Italian')?></option>
-            <option value="ja" <?php echo($this->controller->displayTag == "ja" ? "selected" : "")?>><?=t('Japanese')?></option>
-            <option value="kr" <?php echo($this->controller->displayTag == "kr" ? "selected" : "")?>><?=t('Korean')?></option>
-            <option value="la" <?php echo($this->controller->displayTag == "la" ? "selected" : "")?>><?=t('Latvian')?></option>
-            <option value="lt" <?php echo($this->controller->displayTag == "lt" ? "selected" : "")?>><?=t('Lithuanian')?></option>
-            <option value="mk" <?php echo($this->controller->displayTag == "mk" ? "selected" : "")?>><?=t('Makedonian')?></option>
-            <option value="no" <?php echo($this->controller->displayTag == "no" ? "selected" : "")?>><?=t('Norvegian')?></option>
-            <option value="nl" <?php echo($this->controller->displayTag == "nl" ? "selected" : "")?>><?=t('Dutch')?></option>
-            <option value="pl" <?php echo($this->controller->displayTag == "pl" ? "selected" : "")?>><?=t('Polish')?></option>
-            <option value="pt" <?php echo($this->controller->displayTag == "pt" ? "selected" : "")?>><?=t('Potuguese')?></option>
-            <option value="pt_br" <?php echo($this->controller->displayTag == "pt_br" ? "selected" : "")?>><?=t('Português Brasil')?></option>
-            <option value="ro" <?php echo($this->controller->displayTag == "ro" ? "selected" : "")?>><?=t('Romanian')?></option>
-            <option value="ru" <?php echo($this->controller->displayTag == "ru" ? "selected" : "")?>><?=t('Russian')?></option>
-            <option value="se" <?php echo($this->controller->displayTag == "se" ? "selected" : "")?>><?=t('Swedish')?></option>
-            <option value="sk" <?php echo($this->controller->displayTag == "sk" ? "selected" : "")?>><?=t('Slovak')?></option>
-            <option value="sp" <?php echo($this->controller->displayTag == "sp" ? "selected" : "")?>><?=t('Spanish')?></option>
-            <option value="sr" <?php echo($this->controller->displayTag == "sr" ? "selected" : "")?>><?=t('Serbian')?></option>
-            <option value="th" <?php echo($this->controller->displayTag == "th" ? "selected" : "")?>><?=t('Thai')?></option>
-            <option value="ua" <?php echo($this->controller->displayTag == "ua" ? "selected" : "")?>><?=t('Ukranian')?></option>
-            <option value="vi" <?php echo($this->controller->displayTag == "vi" ? "selected" : "")?>><?=t('Vietnamese')?></option>
-            <option value="zh_cn" <?php echo($this->controller->displayTag == "zh_cn" ? "selected" : "")?>><?=t('Chinese Traditional')?></option>
-            <option value="zu" <?php echo($this->controller->displayTag == "zu" ? "selected" : "")?>><?=t('Zulu')?></option>
+            <option value="af" <?php echo($language == "af" ? "selected" : "")?>><?=t('Afrikaans')?></option>
+            <option value="al" <?php echo($language == "al" ? "selected" : "")?>><?=t('Albanian')?></option>
+            <option value="ar" <?php echo($language == "ar" ? "selected" : "")?>><?=t('Arabic')?></option>
+            <option value="az" <?php echo($language == "az" ? "selected" : "")?>><?=t('Azerbaijani')?></option>
+            <option value="bg" <?php echo($language == "bg" ? "selected" : "")?>><?=t('Bulgarian')?></option>
+            <option value="cz" <?php echo($language == "cz" ? "selected" : "")?>><?=t('Czech')?></option>
+            <option value="en" <?php echo($language == "en" ? "selected" : "")?>><?=t('English')?></option>
+            <option value="eu" <?php echo($language == "eu" ? "selected" : "")?>><?=t('Basque')?></option>
+            <option value="fa" <?php echo($language == "fa" ? "selected" : "")?>><?=t('Persian (Farsi)')?></option>
+            <option value="fi" <?php echo($language == "fi" ? "selected" : "")?>><?=t('Finnish')?></option>
+            <option value="fr" <?php echo($language == "fr" ? "selected" : "")?>><?=t('French')?></option>
+            <option value="he" <?php echo($language == "he" ? "selected" : "")?>><?=t('Hebrew')?></option>
+            <option value="hr" <?php echo($language == "hr" ? "selected" : "")?>><?=t('Croatian')?></option>
+            <option value="hu" <?php echo($language == "hu" ? "selected" : "")?>><?=t('Hungarian')?></option>
+            <option value="id" <?php echo($language == "id" ? "selected" : "")?>><?=t('Indonesian')?></option>
+            <option value="it" <?php echo($language == "it" ? "selected" : "")?>><?=t('Italian')?></option>
+            <option value="ja" <?php echo($language == "ja" ? "selected" : "")?>><?=t('Japanese')?></option>
+            <option value="kr" <?php echo($language == "kr" ? "selected" : "")?>><?=t('Korean')?></option>
+            <option value="la" <?php echo($language == "la" ? "selected" : "")?>><?=t('Latvian')?></option>
+            <option value="lt" <?php echo($language == "lt" ? "selected" : "")?>><?=t('Lithuanian')?></option>
+            <option value="mk" <?php echo($language == "mk" ? "selected" : "")?>><?=t('Makedonian')?></option>
+            <option value="no" <?php echo($language == "no" ? "selected" : "")?>><?=t('Norvegian')?></option>
+            <option value="nl" <?php echo($language == "nl" ? "selected" : "")?>><?=t('Dutch')?></option>
+            <option value="pl" <?php echo($language == "pl" ? "selected" : "")?>><?=t('Polish')?></option>
+            <option value="pt" <?php echo($language == "pt" ? "selected" : "")?>><?=t('Potuguese')?></option>
+            <option value="pt_br" <?php echo($language == "pt_br" ? "selected" : "")?>><?=t('Português Brasil')?></option>
+            <option value="ro" <?php echo($language == "ro" ? "selected" : "")?>><?=t('Romanian')?></option>
+            <option value="ru" <?php echo($language == "ru" ? "selected" : "")?>><?=t('Russian')?></option>
+            <option value="se" <?php echo($language == "se" ? "selected" : "")?>><?=t('Swedish')?></option>
+            <option value="sk" <?php echo($language == "sk" ? "selected" : "")?>><?=t('Slovak')?></option>
+            <option value="sp" <?php echo($language == "sp" ? "selected" : "")?>><?=t('Spanish')?></option>
+            <option value="sr" <?php echo($language == "sr" ? "selected" : "")?>><?=t('Serbian')?></option>
+            <option value="th" <?php echo($language == "th" ? "selected" : "")?>><?=t('Thai')?></option>
+            <option value="ua" <?php echo($language == "ua" ? "selected" : "")?>><?=t('Ukranian')?></option>
+            <option value="vi" <?php echo($language == "vi" ? "selected" : "")?>><?=t('Vietnamese')?></option>
+            <option value="zh_cn" <?php echo($language == "zh_cn" ? "selected" : "")?>><?=t('Chinese Traditional')?></option>
+            <option value="zu" <?php echo($language == "zu" ? "selected" : "")?>><?=t('Zulu')?></option>
             </select>
     </div>
 
