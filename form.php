@@ -76,7 +76,7 @@ if (!isset($wind)) {
 
 <div class="form-group">
     <label class="control-label">Icon size in pixels:</label>
-    <?php echo $form->text('iconsize', $iconsize) ?>
+    <?php echo $form->number('iconsize', $iconsize) ?>
 </div>
 
 <div class="form-group">
