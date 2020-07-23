@@ -45,7 +45,7 @@ if (!isset($wind)) {
 <fieldset>
 <div class="form-group">
     <label class="control-label">API</label>
-    <?php echo $form->text('api', $api); ?>
+    <?php echo $form->text('api', $api, array('required' => 'required')); ?>
 </div>
 
 <div class="form-group">
@@ -55,7 +55,7 @@ if (!isset($wind)) {
 
 <div class="form-group">
     <label class="control-label">ID:</label>
-    <?php echo $form->text('id', $id) ?>
+    <?php echo $form->text('id', $id, array('required' => 'required')); ?>
 </div>
 
 

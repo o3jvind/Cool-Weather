@@ -20,18 +20,20 @@ class Controller extends BlockController
     {
         return t('Cool Weather');
     }
-
-    public function validate($data)
-    {
-        $e = Core::make('error');
-        if (!$data['api']) {
-            $e->add(t('You need an API key.'));
-        return $e;
-      } elseif (!$data['id']) {
-            $e->add(t('You need an ID for a city.'));
-        return $e;
-    }
-  }
+    
+  //  Not needed
+  //  Using HTML5 required
+  //   public function validate($data)
+  //   {
+  //       $e = Core::make('error');
+  //       if (!$data['api']) {
+  //           $e->add(t('You need an API key.'));
+  //       return $e;
+  //     } elseif (!$data['id']) {
+  //           $e->add(t('You need an ID for a city.'));
+  //       return $e;
+  //   }
+  // }
 
 
 
