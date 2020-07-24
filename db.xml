@@ -23,6 +23,9 @@
 		<field name="iconsize" type="X2">
 			<default value="" />
 		</field>
+		<field name="iconshadow" type="X2">
+			<default value="" />
+		</field>
 		<field name="feelslike" type="X2">
 			<default value="" />
 		</field>

@@ -2,6 +2,11 @@
 
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
+/*
+ * @author   O3JVIND <postkassen@oejvind.dk>
+ * @license  See attached license file
+ */
+
 if (!isset($api)) {
     $api = '';
 }
@@ -24,6 +29,10 @@ if (!isset($header)) {
 
 if (!isset($iconsize)) {
     $iconsize = '48';
+}
+
+if (!isset($iconshadow)) {
+    $iconshadow = '2px 2px 8px #00000066;';
 }
 
 if (!isset($feelslike)) {
@@ -77,6 +86,11 @@ if (!isset($wind)) {
 <div class="form-group">
     <label class="control-label">Icon size in pixels:</label>
     <?php echo $form->number('iconsize', $iconsize) ?>
+</div>
+
+<div class="form-group">
+    <label class="control-label">Icon shadow:</label>
+    <?php echo $form->text('iconshadow', $iconshadow) ?>
 </div>
 
 <div class="form-group">

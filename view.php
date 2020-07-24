@@ -1,6 +1,11 @@
 <?php
 defined('C5_EXECUTE') or die('Access Denied.');
 
+/*
+ * @author   O3JVIND <postkassen@oejvind.dk>
+ * @license  See attached license file
+ */
+
 
 $api_url = 'http://api.openweathermap.org/data/2.5/weather?id=' . $id . '&units=' . $units . '&lang=' . $language . '&appid=' . $api;
 
@@ -36,7 +41,7 @@ $winddirection_current = $forecast->wind->deg;
 		<div class="card p-4" style="margin: 0 auto; max-width:320px;">
 			<h2><?php echo $header ?></h2>
 			<p class="lead"><?php echo ucfirst($description_current); ?></p>
-			<span class="my-3" style="font-size:<?php echo $iconsize ?>px;"> <?php echo $controller->get_icon($icon); ?></span>
+			<span class="my-3" style="font-size:<?php echo $iconsize ?>px; <?php echo 'text-shadow:' . $iconshadow?>;"> <?php echo $controller->get_icon($icon); ?></span>
 			<h3><?php echo $temperature_current ?>&deg;</h3>
 			<p><?php echo $feelslike . ' ' . $temperature_feels_like_current; ?>&deg;</p>
 			<p><?php echo $humidity . ' ' . $humidity_current; ?>%</p>

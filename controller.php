@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * @author   O3JVIND <postkassen@oejvind.dk>
+ * @license  See attached license file
+ */
+ 
 namespace Application\Block\CoolWeather;
 
 use Concrete\Core\Block\BlockController;
@@ -20,7 +25,7 @@ class Controller extends BlockController
     {
         return t('Cool Weather');
     }
-    
+
   //  Not needed
   //  Using HTML5 required
   //   public function validate($data)
