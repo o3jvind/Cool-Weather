@@ -1,5 +1,5 @@
 # cool_weather
-A weather block for concrete5
+A weather block for concrete5 in 40+ languages
 
 Work in progress.......
 
