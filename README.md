@@ -1,4 +1,4 @@
-# Cool-Weather
+# cool_weather
 A weather block for concrete5
 
 Work in progress.......
